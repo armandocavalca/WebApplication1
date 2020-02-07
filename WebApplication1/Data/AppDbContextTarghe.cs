@@ -5,14 +5,12 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using WebApplication1;
 
-    public class AppDbContext : DbContext
+    public class AppDbContextTarghe : DbContext
     {
-        public AppDbContext (DbContextOptions<AppDbContext> options)
+        public AppDbContextTarghe (DbContextOptions<AppDbContextTarghe> options)
             : base(options)
         {
         }
-
-        public DbSet<WebApplication1.Game> Game { get; set; }
 
         public DbSet<WebApplication1.BC_Targhe> BC_Targhe { get; set; }
     }
